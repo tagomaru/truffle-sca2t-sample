@@ -1,0 +1,26 @@
+{
+  "name": "truffle-sca2t-sample",
+  "version": "1.0.0",
+  "description": "truffle-sca2t sample project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:security": "mocha ./test_security --timeout 500000",
+    "test:security:html": "mocha ./test_security --timeout 500000 --reporter mocha-simple-html-reporter --reporter-options output=security-report.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tagomaru/truffle-sca2t-sample.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tagomaru/truffle-sca2t-sample/issues"
+  },
+  "homepage": "https://github.com/tagomaru/truffle-sca2t-sample#readme",
+  "dependencies": {
+    "truffle": "^5.0.13",
+    "truffle-sca2t": "^0.2.3",
+    "truffle-security": "^1.3.5"
+  }
+}
